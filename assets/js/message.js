@@ -74,6 +74,9 @@ get(child(dataRef, "people"))
                     messageText.textContent = `Send ${element.val().Name} a Secret Message`;
                     messageOBJ = JSON.parse(element.val().message);
                     console.log(messageOBJ);
+                    if(name == localStorage.getItem('name')){
+                        window.location.href = './index.html';
+                    }
                 }
             }
         })
