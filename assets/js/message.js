@@ -75,7 +75,7 @@ get(child(dataRef, "people"))
                     messageOBJ = JSON.parse(element.val().message);
                     console.log(messageOBJ);
                     if(name == localStorage.getItem('name')){
-                        window.location.href = './index.html';
+                        window.location.href = '../index.html';
                     }
                 }
             }
