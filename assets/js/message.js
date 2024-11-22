@@ -94,6 +94,7 @@ sendButton.onclick = () => {
             message: JSON.stringify(messageOBJ),
         }).then(() => {
             localStorage.setItem('sent', name);
+            location.reload();
         }).catch((error) => {
             alert('Error adding data to the database');
         });
