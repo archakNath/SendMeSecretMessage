@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/assets/resources/favicon.ico" type="image/x-icon">
+    <title>Send Me a Secret Message</title>
+    <link rel="stylesheet" href="/src/output.css">
+</head>
+<body class="bg-blue-50">
+    <header class="padding-x py-6 fixed top-0 w-full bg-blue-500 flex gap-5 items-center justify-between">
+        <img src="/assets/resources/logoTooth.png" alt="" height="50" width="50">
+        <h2 class="text-white font-montserrat inline text-xl">Send me a secret message 🤫</h2>
+    </header>
+
+    <main class=" max-container pt-24">
+        <div class="w-full h-screen flex justify-center items-center" id="name-div">
+            <div class="border-2 border-blue-200 rounded-lg p-6 shadow-2xl flex flex-col justify-center items-center bg-white">
+                <p class="text-lg font-palanquin text-center mb-4">Generate your link to <br> share with friends and ask <br> them to send you a secret message.</p>
+                <h3 class="text-xl font-montserrat font-semibold text-blue-600">Enter your Name</h3>
+                <input type="text" placeholder="Your Name" class="text-center mt-4 border-2 border-blue-600 rounded-xl p-2 w-full " id="name-input">
+                <button class="mt-2 bg-blue-600 text-white px-7 py-3 w-full rounded-xl hover:bg-blue-500 transition-all" id="generate-button">Generate</button>
+            </div>
+        </div>
+
+        <div id="message-div" class="hidden min-h-screen padding flex-col">
+            <div class="bg-yellow-200 p-4 rounded-lg shadow-xl">
+
+                <h1 class="font-bold font-montserrat text-3xl text-center">Share with your friends</h1>
+
+                <div class="bg-white py-2 px-6 mt-4 rounded-lg flex justify-between items-center">
+                    <p class="text-blue-700 font-montserrat font-semibold text-lg flex-1 text-center" id="link-text">hello there</p>
+                    <svg title="Copy to clipboard" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#2563eb" id="link-clipboard" class="h-12 w-12 p-3 bg-blue-100 rounded-full cursor-pointer hover:bg-blue-300 transition-all"><path d="M6 4V8H18V4H20.0066C20.5552 4 21 4.44495 21 4.9934V21.0066C21 21.5552 20.5551 22 20.0066 22H3.9934C3.44476 22 3 21.5551 3 21.0066V4.9934C3 4.44476 3.44495 4 3.9934 4H6ZM8 2H16V6H8V2Z"></path></svg>
+                </div>
+
+                <div class="flex w-full justify-center items-center gap-4 mt-4">
+                    <p class="text-lg font-montserrat font-semibold">Share on </p>
+                    <div class="p-2 bg-[#00ff00] rounded-full cursor-pointer" id="shareWhatsapp">
+                        <img src="/assets/resources/whatsapp.svg" alt="" class="h-7">
+                    </div>
+                    <div class="p-2 bg-[#316FF6] rounded-full cursor-pointer" id="shareFacebook">
+                        <img src="/assets/resources/facebook.svg" alt="" class="h-7">
+                    </div>
+                    <div class="p-2 bg-[#14171A] rounded-full cursor-pointer" id="shareTwitter">
+                        <img src="/assets/resources/twitter.svg" alt="" class="h-7">
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-5 p-4 bg-white rounded-lg shadow-lg flex flex-col gap-4" id="message-box">
+                <h1 class="text-xl font-montserrat" id="no-message-text">No messages yet.</h1>
+            </div>
+        </div>
+    </main>
+
+    <footer class="padding-x py-4 bg-blue-600 flex justify-center items-center gap-2">
+        <p class="text-white text-xl">Made by <a class="underline" href="https://github.com/archakNath">archakNath</a></p>
+        <img src="/assets/resources/copyright.svg" alt="" width="24">
+    </footer>
+
+
+    <script type="module" src="/assets/js/main.js" defer></script>
+</body>
+</html>

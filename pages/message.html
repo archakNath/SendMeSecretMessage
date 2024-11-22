@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/assets/resources/favicon.ico" type="image/x-icon">
+    <title>Send Me a Secret Message</title>
+    <link rel="stylesheet" href="/src/output.css">
+</head>
+<body class="bg-blue-50">
+    <header class="padding-x py-6 fixed top-0 w-full bg-blue-500 flex gap-5 items-center justify-between">
+        <img src="/assets/resources/logoTooth.png" alt="" height="50" width="50">
+        <h2 class="text-white font-montserrat inline text-xl">Send me a secret message 🤫</h2>
+    </header>
+
+    <main class="w-full h-screen pt-24 padding max-container flex justify-center items-center font-montserrat">
+        <div class="bg-white p-6 border-2 border-blue-200 rounded-xl shadow-lg">
+            <h3 class="text-xl text-center" id="message-text"></h3>
+            <input class="text-center mt-4 px-6 py-4 border-2 border-blue-400 w-full rounded-lg" type="text" placeholder="Your Message" id="message-input">
+            <button class="mt-2 bg-blue-600 text-white py-3 w-full rounded-xl hover:bg-blue-500 transition-all" id="send-button">Send Message</button>
+            <button class="mt-2 bg-yellow-300 py-3 w-full rounded-xl hover:bg-yellow-200 transition-all text-black font-semibold" id="link-button">Create your own link!</button>
+        </div>
+    </main>
+
+    <footer class="padding-x py-4 bg-blue-600 flex justify-center items-center gap-2">
+        <p class="text-white text-xl">Made by <a class="underline" href="https://github.com/archakNath">archakNath</a></p>
+        <img src="/assets/resources/copyright.svg" alt="" width="24">
+    </footer>
+
+
+    <script type="module" src="/assets/js/message.js" defer></script>
+</body>
+</html>
