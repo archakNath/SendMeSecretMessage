@@ -48,7 +48,7 @@ if (localStorage.getItem('reference') != null) {
     nameDiv.style.display = 'none';
     messageDiv.style.display = 'flex';
 
-    const baseURL = 'http://127.0.0.1:5500/pages/message.html';
+    const baseURL = 'https://send-me-secret-message.vercel.app/pages/message.html';
     const params = new URLSearchParams({
         name: localStorage.getItem("name")
     });
